@@ -13,7 +13,7 @@
     </style>
 </head>
 <body class="">
-    <header class="w-[85%] mx-auto">
+    <header id="header" class="w-[85%] mx-auto">
         <div class="navbar bg-base-100 my-5">
             <div class="navbar-start">
               <div class="dropdown">
@@ -50,7 +50,7 @@
             </div>
           </div>
     </header>
-    <main>
+    <main id="main" class="">
         <section class="w-[85%] mx-auto">
            <div class="my-5">
               <h2 class="text-center font-bold text-xl">Best offers for you</h2>
@@ -111,7 +111,7 @@
             
                           <div class="flex gap-2 items-center  px-2 bg-green-200 rounded-md">
                             <img src="images/seat-green.png" alt="">
-                            <p class="text-green-500 font-bold"><span>40 </span>Seats left</p>
+                            <p class="text-green-500 font-bold"><span id="totalSeat">8 </span> Seats left</p>
                           </div>
                         </div>
                         <div>
@@ -168,81 +168,71 @@
                 <button class="p-1 px-7 rounded-md bg-gray-400"><img src="images/wheel.png" alt=""></button>
               </div>
               <!-- Seats  -->
-              <div class="my-2 flex flex-col gap-5">
-                <div class="flex justify-between gap-5">
+              <div id="allSeats" class="my-2 grid grid-cols-5 gap-5">
+                
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">A</div>
-                  <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">A1</div>
-                  <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">A2</div>
-                  <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">A3</div>
-                  <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">A4</div>
-                </div>
-                <div class="flex justify-between gap-5">
+                  <p class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black cursor-pointer">A1</p>
+                  <p class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black cursor-pointer">A2</p>
+                  <p class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black cursor-pointer">A3</p>
+                  <p class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black cursor-pointer">A4</p>
+          
+
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">B</div>
-                  <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">B1</div>
-                  <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">B2</div>
-                  <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">B3</div>
-                  <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">B4</div>
-                </div>
-                <div class="flex justify-between gap-5">
+                  <p class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black cursor-pointer">B1</p>
+                  <p class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black cursor-pointer">B2</p>
+                  <p class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black cursor-pointer">B3</p>
+                  <p class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black cursor-pointer">B4</p>
+            
+                <!--
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">C</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">C1</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">C2</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">C3</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">C4</div>
-                </div>
-                <div class="flex justify-between gap-5">
+                
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">D</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">D1</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">D2</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">D3</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">D4</div>
-                </div>
-                <div class="flex justify-between gap-5">
+                
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">E</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">E1</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">E2</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">E3</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">E4</div>
-                </div>
-                <div class="flex justify-between gap-5">
+                
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">F</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">F1</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">F2</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">F3</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">F4</div>
-                </div>
-                <div class="flex justify-between gap-5">
+                
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">G</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">G1</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">G2</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">G3</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">G4</div>
-                </div>
-                <div class="flex justify-between gap-5">
+                
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">H</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">H1</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">H2</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">H3</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">H4</div>
-                </div>
-                <div class="flex justify-between gap-5">
+               
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">I</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">I1</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">I2</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">I3</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">I4</div>
-                </div>
-                <div class="flex justify-between gap-5">
+                
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">J</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">J1</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">J2</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">J3</div>
                   <div class="py-1 px-3 lg:px-7 rounded-md bg-gray-400 text-black">J4</div>
-                </div>
+                 -->
               </div>
-
-
-
 
             </div>
             <!-- Ticket Left end -->
@@ -253,80 +243,95 @@
               </div>
               <div class="mt-10 p-4 bg-gray-500 rounded-md">
                 <div class="flex justify-between border-black border-b border-dashed py-2 text-black">
-                  <p class="font-bold">Seat</p>
+                  <p class="font-bold">Seat <span id="addSeat" class="px-2 bg-green-500 rounded-md text-white font-normal">0</span></p>
                   <p class="font-bold">Class</p>
                   <p class="font-bold">Price</p>
                 </div>
-                <div class="flex justify-between py-2 text-black">
-                  <p class="font-bold">C2</p>
-                  <p class="font-bold">Economoy</p>
-                  <p class="font-bold">550</p>
-                </div>
-                <div class="flex justify-between py-2 text-black">
-                  <p class="font-bold">C2</p>
-                  <p class="font-bold">Economoy</p>
-                  <p class="font-bold">550</p>
+                <div id="allTicket" class="my-1">
+                  
                 </div>
                 <div class="flex justify-between py-2 text-black border-black border-t">
                   <p class="font-bold">Total</p>
-                  <p class="font-bold">550</p>
+                  <p id="totalCost" class="font-bold">000</p>
                 </div>
-                <div class="flex justify-between py-2 text-black border-black border-t">
-                  <p><input type="text" placeholder="Have any copupon?" class="bg-white p-1 rounded w-full"></p>
-                  <button class="px-4 py-1 bg-green-500 rounded-md font-bold text-white">Apply</button>
+                <div id="hideCupon" class="flex justify-between py-2 text-black border-black border-t">
+                  <p><input id="cuponCode" type="text" placeholder="Have any copupon?" class="bg-white p-1 rounded w-full"></p>
+                  <button id="cupon" class="px-4 py-1 bg-green-500 rounded-md font-bold text-white">Apply</button>
                 </div>
                 <div class="flex justify-between py-2 text-black">
                   <p class="font-bold">Grand Total</p>
-                  <p class="font-bold">550</p>
+                  <p id="grandTotal" class="font-bold">000</p>
                 </div>
               </div>
               <div class="mt-2 p-4 border rounded-md">
+ <!-- Form Start -->
+      <form class="">
+        <div class="mb-5">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Passenger Name*</label>
+          <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Enter your name" required />
+        </div>
+        <div class="mb-5">
+          <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number*</label>
+          <input type="number" id="number" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required placeholder="Enter your phone number"/>
+        </div>
+        <div class="mb-5">
+          <label for="emailId" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email ID</label>
+          <input type="email" id="emailId" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Enter your email id" />
+        </div>
 
+        <div class="flex justify-center items-center">
+          <button id="nextModal" type="submit" class="text-white w-full bg-green-500 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Next</button>
+        </div>
+      </form>
+      <div class="flex justify-center gap-5 py-2 text-black">
+        <p class="text-sm opacity-70 underline text-white">Terms and Conditions</p>
+        <p class="text-sm opacity-70 underline text-white">Cancellation Policy</p>
+      </div>
 
-                <!-- Form Start -->
-                
-
-<form class="">
-  <div class="mb-5">
-    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Passenger Name*</label>
-    <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Enter your name" required />
+      <!-- Form End --> 
+    </div>
   </div>
-  <div class="mb-5">
-    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number*</label>
-    <input type="number" id="number" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required placeholder="Enter your phone number"/>
-  </div>
-  <div class="mb-5">
-    <label for="emailId" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email ID</label>
-    <input type="email" id="emailId" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Enter your email id" />
-  </div>
-
-  <div class="flex justify-center items-center">
-    <button type="submit" class="text-white w-full bg-green-500 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Next</button>
-  </div>
-</form>
-<div class="flex justify-center gap-5 py-2 text-black">
-  <p class="text-sm opacity-70 underline text-white">Terms and Conditions</p>
-  <p class="text-sm opacity-70 underline text-white">Cancellation Policy</p>
+  <!-- ticket right end -->
+  </div> 
+  <!-- Container end  -->
 </div>
+</main>
 
-                <!-- Form End -->
 
-                
+
+  <!-- Modal  -->
+  <div id="modal" class="overflow-y-auto sm:p-0 pt-4 pr-4 pb-20 pl-4 hidden">
+    <div class="flex justify-center items-end text-center min-h-screen sm:block">
+      <div class="bg-gray-500 transition-opacity bg-opacity-75"></div>
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen">​</span>
+      <div class= "inline-block text-left bg-white rounded-lg overflow-hidden align-bottom transition-all transform
+          shadow-2xl sm:my-8 sm:align-middle sm:max-w-xl sm:w-full">
+        <div class="items-center w-full mr-auto ml-auto relative max-w-7xl md:px-12 lg:px-24">
+          <div class="grid grid-cols-1">
+            <div class="mt-4 mr-auto mb-4 ml-auto bg-white max-w-lg">
+              <div class="flex flex-col items-center pt-6 pr-6 pb-6 pl-6">
+                <img
+                    src="images/success.png" class="flex-shrink-0 object-cover object-center btn- flex w-16 h-16 mr-auto -mb-8 ml-auto rounded-full shadow-xl">
+                <p class="mt-8 text-2xl font-semibold leading-none text-green-500 tracking-tighter lg:text-3xl">Success</p>
+                <p class="mt-3 text-base leading-relaxed text-center text-black font-bold opacity-70">Thank you for Booking Our Bus Seats.We are working hard to find the best service and deals for you.</p>
+                <p class="mt-3 text-base leading-relaxed text-center text-black opacity-70">Shortly you will find a confirmation in your email.</p>
+                <div class="w-full mt-6">
+                  <a href="index.html" class="flex text-center items-center justify-center w-full pt-4 pr-10 pb-4 pl-10 text-base
+                      font-medium text-white bg-indigo-600 rounded-xl transition duration-500 ease-in-out transform
+                      hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Continue</a>
+                </div>
               </div>
-
-
-
             </div>
-            <!-- ticket right end -->
-            </div>
-            
-            <!-- Container end  -->
           </div>
-        <section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal  -->
 
-        </section>
-    </main>
-    <footer class="bg-base-200">
+
+
+    <footer id="footer" class="bg-base-200">
       <div class="footer py-10 text-base-content flex justify-between w-[85%] mx-auto">
         <nav>
           <h2 class="footer-title text-3xl">P-Ticket</h2> 
@@ -350,5 +355,6 @@
         </nav>
         </div>
       </footer>
+      <script src="js/script.js"></script>
 </body>
 </html>
