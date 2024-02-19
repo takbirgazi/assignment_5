@@ -37,6 +37,10 @@ seats.addEventListener("click", function(event){
         allTicket.appendChild(crtDiv);
         totalCost.innerHTML = totalTicket*550;
         grandTotal.innerHTML = totalTicket*550;
+
+        if(totalTicket > 4){
+            alert("You Can buy highest 4 ticket")
+        }
        
 
     }
