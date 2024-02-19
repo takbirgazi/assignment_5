@@ -12,11 +12,13 @@ let hideCupon = document.getElementById("hideCupon");
 
 seats.addEventListener("click", function(event){
 
-    if(event.target.tagName == "P"){
+    if(event.target.tagName == "P" && event.target.classList.contains("bg-green-500") == false){
+        
+        if(addSeat.innerHTML < 4){
         event.target.classList.add("bg-green-500");
         totalSeat.innerHTML = totalSeat.innerText - 1 ;
         let totalTicket = addSeat.innerHTML = parseInt(addSeat.innerText) + 1 ;
-
+        
         const trgSit = event.target.innerText;
         let crtDiv = document.createElement("DIV");
         let crtP = document.createElement("P");
@@ -37,8 +39,7 @@ seats.addEventListener("click", function(event){
         allTicket.appendChild(crtDiv);
         totalCost.innerHTML = totalTicket*550;
         grandTotal.innerHTML = totalTicket*550;
-
-        if(totalTicket > 4){
+        }else{
             alert("You Can buy highest 4 ticket")
         }
        
